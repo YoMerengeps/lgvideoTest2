@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!--lightgallery plugins-->
+    <script src="plugins/video/lg-video.min.js"></script>
+    <script src="lightgallery.min.js"></script>
+
+
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-video.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-thumbnail.css" />
+
+
+
+    <!-- OR -->
+
+    <!-- <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.min.css" /> -->
+
+    <!-- lightgallery plugins -->
+    <script src="plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="plugins/video/lg-video.min.js"></script>
+    <script src="plugins/zoom/lg-zoom.min.js"></script>
+
+    <title>lg video test xd</title>
+</head>
+
+<body>
+
+
+    <!-- video lightgallery 
+============================================= -->
+    <div id="lightgallery">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-poster="https://via.placeholder.com/150"><img
+                src="https://via.placeholder.com/150" /></a>
+
+        <li class="video" data-src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img width="300" height="150" class="img-responsive"
+                    src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+                </img>
+            </a>
+        </li>
+
+        <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+            data-sub-html="<h4>asd</h4><p>asd</p>">
+            <img width="300" height="150" class="img-responsive"
+                src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" />
+        </a>
+
+        <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+            data-sub-html="<h4>asd</h4><p>asd</p>">
+            <img width="300" height="150" class="img-responsive"
+                src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" />
+        </a>
+
+        <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+            data-sub-html="<h4>asd</h4><p>asd</p>">
+            <img width="300" height="150" class="img-responsive"
+                src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" />
+        </a>
+
+        <a data-lg-size="1280-720" data-src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
+            data-sub-html="<h4>asd</h4><p>asd</p>">
+            <img width="300" height="150" class="img-responsive"
+                src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" />
+        </a>
+
+    </div>
+
+    <br><br>
+    <div id="video-gallery">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+            <img width="300" height="150" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" />
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            data-poster="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+            <img width="300" height="150" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" />
+        </a>
+    </div>
+
+    <!--LG scripts-->
+    <script>
+        // lightGallery(document.getElementById('lightgallery'), {
+        //     plugins: [lgVideo],
+        // });
+
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgVideo],
+            videojs: true,
+            videojsOptions: {
+                muted: true,
+            },
+        });
+
+        lightGallery(document.getElementById('video-gallery'), {
+            plugins: [lgVideo],
+            videojs: true,
+            videojsOptions: {
+                muted: true,
+            },
+        });
+
+        // lightGallery(document.getElementById('lightgallery'), {
+        //     plugins: [],  /* if i add the lgVideo pluggin it dies here... */
+        //     speed: 200,
+        // });
+        /* */
+        // lightGallery(document.getElementById('lightgallery'));
+
+
+    </script>
+</body>
+
+</html>
